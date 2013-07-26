@@ -8,7 +8,7 @@
 # Revision History
 # ----------------
 # 25Jul13 - SergioBarbosa - Created controller.
-class HomeController < ActionController::Base
+class HomeController < ApplicationController
    
    def index
    end
