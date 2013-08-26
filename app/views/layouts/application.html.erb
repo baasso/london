@@ -5,10 +5,34 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
-<body>
-asdfadsf
-<%= yield %>
+	<script type="text/javascript">
+		$(function(){
+			$('#myGallery').galleryView({
+				panel_width: 488,
+				panel_height: 450,
+				autoplay: true
+				});
+		});
+	</script>
 
+</head>
+<body id="body">
+	<div id="container">
+		<div id="header">
+			<%= image_tag("header_image.png", :height => 250) %>			
+		</div>
+		<div id="menu">
+			<div id="menu_container" class="h1">
+				<span><%= get_tab_selected("INICIO","/").html_safe %></span>|<span><%= get_tab_selected("NOSOTROS","/nosotros").html_safe %></span>|<span><%= get_tab_selected("PROGRAMAS","/programas").html_safe %></span>|<span><%= get_tab_selected("VISITANOS","/visitanos").html_safe %></span>
+			</div>
+		</div>
+		<div id="body">
+			<%= yield %>
+		</div>
+		<div class="fix"></div>
+		<div id="footer">
+			Footer information
+		</div>
+	</div>
 </body>
 </html>

@@ -13,4 +13,16 @@ class HomeController < ApplicationController
    def index
    end
 
+   def about
+   end
+
+   def program
+   end
+
+   def registration
+   end
+
+   def visit
+   end
+
 end
