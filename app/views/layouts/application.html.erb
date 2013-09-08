@@ -29,15 +29,28 @@
 		</div>
 		<div id="menu">
 			<div id="menu_container" class="h1">
-				<span><%= get_tab_selected("INICIO","/").html_safe %></span>|<span><%= get_tab_selected("NOSOTROS","/nosotros").html_safe %></span>|<span><%= get_tab_selected("PROGRAMAS","/programas").html_safe %></span>|<span><%= get_tab_selected("VISITANOS","/visitanos").html_safe %></span>
+				<span class="border_right"><%= get_tab_selected("INICIO","/").html_safe %></span><span class="border_right"><%= get_tab_selected("NOSOTROS","/nosotros").html_safe %></span><span class="border_right"><%= get_tab_selected("PROGRAMAS","/programas").html_safe %></span><span><%= get_tab_selected("VISITANOS","/visitanos").html_safe %></span>
 			</div>
 		</div>
 		<div id="body">
 			<%= yield %>
 		</div>
 		<div class="fix"></div>
-		<div id="footer">
-			Footer information
+		<div id="footer" class="text">
+			<div id="footer_extra">
+				<div class="left" style="margin-left: 160px;">
+					<b>Domicilio:</b><br />
+					Jazmín #200 Col. Centro<br />
+					Ciudad Guzmán, Jal.
+				</div>
+				<div class="left" style="margin-left: 60px;">
+					<b>Email:</b> machin@machin.com <br />
+					<b>Teléfonos:</b> (341) 41 33333
+				</div>
+				<div class="left" style="margin-left: 60px;">
+					<b>Siguenos:</b><br /><%= link_to(image_tag('facebook.png', :width => 25), "https://www.facebook.com/LondonEnglishInstitute", :target => "blank") %>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

@@ -27,19 +27,18 @@ function initialize()
 	<div class="info_box_label h2 margin_left">
 		VISITANOS
 	</div>
-	<div class="index_left2 left width_medium">
+	<div class="index_left left width_medium">
 		<div id="googleMap" style="width:379px;height:379px;"></div>
 	</div>
-	<div class="index_right2 right width_medium text text_justify">
+	<div class="index_right right width_medium text text_justify">
 		<div class="margin_bottom">
 			<div class="info_box_label h2 margin_bottom">
 				DOMICILIO:
 			</div>
 			Jazmín #200 Col. Centro C.P. 49000, Ciudad Guzmán, Jal.
-			<div class="info_box_label h2 margin_bottom margin_top">
-				TELéFONO:
+			<div style="margin-top:10px;vertical-align:middle">
+				<%= image_tag('phone.png', :width => 20) %> (341) 41 33333
 			</div>
-			(341) 41 33333
 		</div>
 		<div class="padding_top dotted_top margin_right">
 			<div class="info_box_label h2 margin_bottom">
@@ -47,8 +46,8 @@ function initialize()
 			</div>
 			<%= form_tag "/subscribe/signup_submit" do %>			
 				<input type="text" name="email" placeholder="Correo electronico" /><br /><br />					
-				<input type="text" name="name" placeholder="Nombre" /><br /><br />				
-				<input type="text" name="company" placeholder="Comentario" /><br /><br />	
+				<input type="text" name="name" placeholder="Nombre" /><br /><br />
+				<%= text_area_tag 'body', nil, rows: 10, cols: 63 %><br /><br />	
 				<input type="submit" name="submit" value="Enviar" class="right" />			
 			<% end %>
 		</div>

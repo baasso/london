@@ -467,11 +467,15 @@ table {
 }
 
 #footer{
-  color:#fff;
-  background-color: #000;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px; 
+  color:#000;
+  background-color: #D70C0C;
+  padding-top: 5px;
+}
+
+#footer_extra{
+  border-top: 1px solid #000; 
+  padding-top: 15px;
+  padding-bottom: 60px;
 }
 
 .selected{
@@ -617,6 +621,10 @@ table {
   padding-top: 10px;
 }
 
+.padding_bottom{
+  padding-bottom: 10px;
+}
+
 .margin_right{
   margin-right: 10px;
 }
@@ -644,6 +652,18 @@ table {
 
 .dotted_top{
   border-top: dotted 1px #000;
+}
+
+.dotted_bottom{
+  border-bottom: dotted 1px #000;
+}
+
+.border_right{
+  border-right: 1px solid #000;
+}
+
+.border_left{
+  border-left: 1px solid #000;
 }
 
 .width_small{
