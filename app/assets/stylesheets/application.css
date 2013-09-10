@@ -467,13 +467,13 @@ table {
 }
 
 #footer{
-  color:#000;
-  background-color: #D70C0C;
+  color: #fff;/*#000*/
+  background-color: #000;/*#D70C0C*/
   padding-top: 5px;
 }
 
 #footer_extra{
-  border-top: 1px solid #000; 
+  /*border-top: 1px solid #fff;*//*#000*/
   padding-top: 15px;
   padding-bottom: 60px;
 }
