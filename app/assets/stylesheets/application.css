@@ -565,8 +565,6 @@ table {
 }
 
 .info_box{
-  border: 1px solid #000;
-  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -680,4 +678,17 @@ table {
 
 .fix_height{
   height: 158px;
+}
+
+.removed_right_margin{
+  margin-right: 0px!important;
+}
+
+.removed_left_margin{
+  margin-left: 0px!important;
+}
+
+.image_right{
+  margin-left: 5px;
+  float:right; 
 }
