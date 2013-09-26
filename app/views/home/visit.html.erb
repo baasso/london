@@ -44,7 +44,7 @@ function initialize()
 			<div class="info_box_label h2 margin_bottom">
 				CONTACTANOS
 			</div>
-			<%= form_tag "/subscribe/signup_submit" do %>			
+			<%= form_tag "/contact_submit" do %>			
 				<input type="text" name="email" placeholder="Correo electronico" /><br /><br />					
 				<input type="text" name="name" placeholder="Nombre" /><br /><br />
 				<%= text_area_tag 'body', nil, rows: 10, cols: 63 %><br /><br />	

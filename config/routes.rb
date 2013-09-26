@@ -60,4 +60,6 @@ London::Application.routes.draw do
   get "/programas" => "home#program"
   get "/visitanos" => "home#visit"
 
+  post "/contact_submit" => "home#contact_submit"
+
 end

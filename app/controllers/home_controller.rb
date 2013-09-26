@@ -23,6 +23,11 @@ class HomeController < ApplicationController
    end
 
    def visit
+       #Recaptcha::Client.new(:rcc_pub=>'6LcdaOcSAAAAACj2mJWUXF_QVFWUxc8oP-1EBQK3 ', :rcc_priv=>'6LcdaOcSAAAAADwLDjLeKh0G12hBnDwTGCtQkTtg')
    end
 
+   def contact_submit
+      NotMailer.contact_email
+      redirect_to "/"
+   end
 end
