@@ -30,4 +30,8 @@ class HomeController < ApplicationController
       NotMailer.contact_email
       redirect_to "/"
    end
+
+   def post_call
+      puts "Params: #{params.inspect}"
+   end
 end
