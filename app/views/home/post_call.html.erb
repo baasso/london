@@ -1,0 +1,55 @@
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC_7UeasAQ6yraz_nM3OD9NrStuo2DzsBk&sensor=false"> 
+</script> 
+<script> 
+function initialize() 
+{ 
+	var myLatlng = new google.maps.LatLng(19.693516,-103.470333);
+	var mapProp = { 
+	  center: myLatlng, 
+	  zoom:16, 
+	  mapTypeId:google.maps.MapTypeId.ROADMAP 
+	  }; 
+	var map=new google.maps.Map(document.getElementById("googleMap") 
+	  ,mapProp);
+
+	  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Jazmin #200'
+  });
+ 
+} 
+	 
+	google.maps.event.addDomListener(window, 'load', initialize); 
+</script>
+
+<div class="margin_top margin_bottom">
+	<div class="info_box_label h2 margin_left">
+		VISITANOS
+	</div>
+	<div class="index_left left width_medium">
+		<div id="googleMap" style="width:379px;height:379px;"></div>
+	</div>
+	<div class="index_right right width_medium text text_justify">
+		<div class="margin_bottom">
+			<div class="info_box_label h2 margin_bottom">
+				DOMICILIO:
+			</div>
+			Jazmín #200 Col. Centro C.P. 49000, Ciudad Guzmán, Jal.
+			<div style="margin-top:10px;vertical-align:middle">
+				<%= image_tag('phone.png', :width => 20) %> (341) 41 33333
+			</div>
+		</div>
+		<div class="padding_top dotted_top margin_right">
+			<div class="info_box_label h2 margin_bottom">
+				CONTACTANOS
+			</div>
+			<%= form_tag "/contact_submit" do %>			
+				<input type="text" name="email" placeholder="Correo electronico" /><br /><br />					
+				<input type="text" name="name" placeholder="Nombre" /><br /><br />
+				<%= text_area_tag 'body', nil, rows: 10, cols: 63 %><br /><br />	
+				<input type="submit" name="submit" value="Enviar" class="right" />			
+			<% end %>
+		</div>
+	</div>
+</div>
