@@ -27,7 +27,7 @@ class HomeController < ApplicationController
    end
 
    def contact_submit
-      NotMailer.contact_email
+      NotMailer.contact_email.deliver
       redirect_to "/"
    end
 
