@@ -27,7 +27,8 @@ class HomeController < ApplicationController
    end
 
    def contact_submit
-      NotMailer.contact_email.deliver
+      puts "Params 1: #{params.inspect}"
+      NotMailer.contact_email(params).deliver
       redirect_to "/"
    end
 
