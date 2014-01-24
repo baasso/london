@@ -692,3 +692,7 @@ table {
   margin-left: 5px;
   float:right; 
 }
+
+.color_white{
+  color: #fff;
+}
