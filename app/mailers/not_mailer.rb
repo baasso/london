@@ -1,5 +1,5 @@
 class NotMailer < ActionMailer::Base
-  default from: "test@test.com", to: "sergio@softwareallies.com", subject: "Contactanos"
+  default from: "test@test.com", to: "hector0581@yahoo.com.mx", subject: "London English Institute Contactanos Email"
  
   def contact_email(params)
   	puts "Params 2: #{params.inspect}"
