@@ -32,7 +32,4 @@ class HomeController < ApplicationController
       redirect_to "/"
    end
 
-   def post_call
-      puts "Params: #{params.inspect}"
-   end
 end

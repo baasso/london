@@ -61,8 +61,5 @@ London::Application.routes.draw do
   get "/visitanos" => "home#visit"
 
   post "/contact_submit" => "home#contact_submit"
-  
-  post "/post_call" => "home#post_call"
-  get "/post_call" => "home#post_call"
 
 end
